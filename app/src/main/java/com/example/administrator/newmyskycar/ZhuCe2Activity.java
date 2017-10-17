@@ -89,7 +89,7 @@ public class ZhuCe2Activity extends AutoLayoutActivity {
                     db.setServerAddress(MySet.AppUser_name, MySet.AppUser_password, MySet.AppUser_id, MySet.AppUser_phone, MySet.AppUser_realname
                             , MySet.AppUser_city, MySet.AppUser_address);
                     db.close();
-                    db2.setServerAddress("fumingzhen","18601918891","11");
+                    db2.setServerAddress("fumingzhen","18601918892","11");
                     db2.close();
                     Toast.makeText(this, "注册成功", Toast.LENGTH_LONG).show();
                     intent.setClass(this, MainActivity.class);
