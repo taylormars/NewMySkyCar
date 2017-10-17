@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="186dp"
+        app:srcCompat="@mipmap/top_one" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="141dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/daibaojia"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/button_break"
+            android:textSize="25dp"
+            android:text="待报价" />
+        <View
+            android:layout_width="2px"
+            android:layout_height="fill_parent"
+            android:background="#FF909090" />
+
+        <Button
+            android:id="@+id/yizhongbiao"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/button_break"
+            android:textSize="25dp"
+            android:text="已中标" />
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="#FF909090" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="141dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/yibaojia"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/button_break"
+            android:textSize="25dp"
+            android:text="已报价" />
+        <View
+            android:layout_width="2px"
+            android:layout_height="fill_parent"
+            android:background="#FF909090" />
+
+        <Button
+            android:id="@+id/xiangguanzixun"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@mipmap/button_break"
+            android:textSize="25dp"
+            android:text="相关资讯" />
+    </LinearLayout>
+</LinearLayout>

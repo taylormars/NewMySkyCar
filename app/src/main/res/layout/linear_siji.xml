@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="#FF909090" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110px"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/mBreatheSetEditText"
+            android:layout_gravity="center"
+            android:layout_marginLeft="124px"
+            android:layout_width="400px"
+            android:layout_height="90px"
+            android:ems="3"
+            android:inputType="number"
+            android:hint="请输入要搜索的名字"
+            android:background="@drawable/editsharp"/>
+
+        <Button
+            android:layout_marginLeft="20px"
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="90px"
+            android:layout_gravity="center"
+            android:background="@drawable/login_bg"
+            android:text="搜索" />
+
+    </LinearLayout>
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="#FF909090" />
+    <ListView
+        android:id="@+id/area_listview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="100px"
+        android:background="@mipmap/bg64">
+        <TextView
+            android:id="@+id/mText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="天车承运人物流信息平台"
+            android:textColor="#ffffff"
+            android:textSize="40px" />
+    </FrameLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:layout_weight="1"
+        android:background="#ffffff" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="#cccccc" />
+    <android.support.design.widget.TabLayout
+        android:id="@+id/mTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="120px"
+        android:layout_gravity="bottom"
+        app:tabIndicatorColor="#ffffff"
+        app:tabSelectedTextColor="#aaaaaa" />
+</LinearLayout>

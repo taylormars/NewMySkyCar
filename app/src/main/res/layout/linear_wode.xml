@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/imageView7"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@mipmap/ic_launcher_round" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="25dp"
+                android:textSize="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="张三" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_marginLeft="40dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10101010101" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:textSize="17dp"
+                android:text="信用评级：5" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2px"
+        android:background="#FF909090" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <Button
+            android:layout_marginTop="90px"
+            android:id="@+id/button10"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@mipmap/button_break"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="我的合同" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="#FF909090" />
+        <Button
+            android:id="@+id/button9"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@mipmap/button_break"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="我的交易数" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="#FF909090" />
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@mipmap/button_break"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="意见反馈" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="#FF909090" />
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@mipmap/button_break"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="个人资料" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="#FF909090" />
+        <Button
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@mipmap/button_break"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="设置" />
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="2px"
+            android:background="#FF909090" />
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="100px"
+            android:background="@mipmap/button_break"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:text="消息中心" />
+    </LinearLayout>
+</LinearLayout>
