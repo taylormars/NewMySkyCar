@@ -5,7 +5,8 @@ package com.example.administrator.newmyskycar.MyData;
  */
 
 public class FriendSet {
-    public static String user_name="";
+    public static String User_id="";
     public static String Friend_Name="";
     public static String Friend_Phone="";
+    public static String Friend_State="";
 }
