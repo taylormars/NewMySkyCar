@@ -12,32 +12,33 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class SqlFrienddata extends SQLiteOpenHelper {
     private final static String DATABASE_NAME="sys";
     private final static int DATABASE_VERSION=2;
-    //用户信息数据库
+    //好友信息数据库
     public final static String USER_ID="_id";
-    public static String Friend_Name="friend_name";
-    public static String Friend_Phone="friend_phone";
-    public final static String USER_NAMEID="user_nameid";
-    public final static String USER_DATA="friend_data";
-
+    public static String Friend_Name="friendname";
+    public static String Friend_Phone="friendphone";
+    public final static String USER_NAMEID="userid";
+    public final static String Friend_State="friendstate";
+    public final static String Friend_DATA="friend_data";
     public SqlFrienddata(Context context){
         super(context,DATABASE_NAME,null,DATABASE_VERSION);
     }
     @Override
     public void onCreate(SQLiteDatabase db){
-        db.execSQL("CREATE TABLE IF NOT EXISTS "+USER_DATA+"("+USER_ID
-                +" INTEGER PRIMARY KEY AUTOINCREMENT,"+ USER_NAMEID + " TEXT,"+ Friend_Name + " TEXT,"+ Friend_Phone + " TEXT);");
+        db.execSQL("CREATE TABLE IF NOT EXISTS "+Friend_DATA+"("+USER_ID
+                +" INTEGER PRIMARY KEY AUTOINCREMENT,"+ USER_NAMEID + " TEXT,"+ Friend_Name + " TEXT,"+ Friend_State + " TEXT,"+ Friend_Phone + " TEXT);");
     }
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int i, int i1) {
     }
-    public long setServerAddress(String friend_Name,String friend_Phone,String id)
+    public long setServerAddress(String friend_Name,String friend_Phone,String id,String friend_state)
     {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues cv = new ContentValues();
         cv.put(USER_NAMEID, id);
         cv.put(Friend_Name, friend_Name);
         cv.put(Friend_Phone, friend_Phone);
-        long row = db.insert(USER_DATA, null, cv);
+        cv.put(Friend_State,friend_state);
+        long row = db.insert(Friend_DATA, null, cv);
         return row;
     }
 }

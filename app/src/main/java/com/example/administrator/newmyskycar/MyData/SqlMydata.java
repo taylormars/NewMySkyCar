@@ -16,7 +16,7 @@ public class SqlMydata extends SQLiteOpenHelper {
     //用户信息数据库
     public final static String USER_DATA="user_data";
     public final static String USER_ID="_id";
-    public final static String USER_NAMEID="user_nameid";
+    public final static String USER_NAMEID="user_id";
     public final static String USER_NAME="user_name";
     public final static String USER_PASSWOED="user_password";
     public final static String USER_PHONE="user_phone";
